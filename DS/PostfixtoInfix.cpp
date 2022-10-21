@@ -40,6 +40,7 @@ void conIn(string str){
     int i=0;
     while(str[i]!='\0'){
         if(isalpha(str[i])|| isdigit(str[i])){
+            //to push a character froma string convert it 
             p.Push(string(1,str[i]));
             i++;
         }
@@ -52,7 +53,7 @@ void conIn(string str){
         }
     }
     string output=p.Peek();
-    cout<<output;
+    cout<<'('+output+')';
 }
 int main(){
     cout<<"Enter a Postfix Expression: ";
